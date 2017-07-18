@@ -1,6 +1,10 @@
+/*
+* Different between Component types
+* Next: Life Cycle
+* */
 import React , {Component} from 'react'
 
-const FunctionalComponent = (props) => {
+const FunctionalComponent = () => {
     return <h2>Hello i'm FunctionalComponent</h2>
 };
 

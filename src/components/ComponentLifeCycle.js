@@ -3,6 +3,7 @@
 * state
 * promise
 * stateUpdate
+* Next: Component properties
 * */
 import React from 'react'
 import ReactDom from 'react-dom'
