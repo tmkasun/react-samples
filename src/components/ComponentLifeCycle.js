@@ -5,11 +5,11 @@
 * stateUpdate
 * Next: Component properties
 * */
-import React from 'react'
+import React , {Component} from 'react'
 import ReactDom from 'react-dom'
 import Header from "./Header";
 
-class ComponentLifeCycle extends React.Component {
+class ComponentLifeCycle extends Component {
     constructor(props) {
         super(props);
         console.log("TRY:[1] First calling constructor");
@@ -19,12 +19,12 @@ class ComponentLifeCycle extends React.Component {
 
     componentWillMount() {
         console.log("TRY:[2] componentWillMount");
-        /*const promisedApiData = this._mockApiCall();
+        const promisedApiData = this._mockApiCall();
         promisedApiData.then(
             response => {
                 this.setState({currentState: response.data});
             }
-        );*/
+        );
     }
 
     render() {
@@ -46,7 +46,7 @@ class ComponentLifeCycle extends React.Component {
         console.log("TRY:[5] shouldComponentUpdate");
         console.log(nextProps);
         console.log(nextState);
-        return true;
+        return false;
     }
 
     componentWillUpdate(nextProps, nextState) {
