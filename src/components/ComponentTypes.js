@@ -5,7 +5,7 @@
 import React , {Component} from 'react'
 
 const FunctionalComponent = () => {
-    return <h2>Hello i'm FunctionalComponent wohaa</h2>
+    return <h2>Hello i'm FunctionalComponent</h2>
 };
 
 class ClassComponent extends Component {
