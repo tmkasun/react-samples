@@ -6,4 +6,4 @@ import ComponentLifeCycle from './components/ComponentLifeCycle'
 import ComponentProperties from './components/ComponentProperties'
 import ReactRouterSample from './components/ReactRouterSample'
 
-ReactDom.render(<ReactRouterSample/>, document.getElementById("root"));
+ReactDom.render(<ComponentTypes/>, document.getElementById("root"));
