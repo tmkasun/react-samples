@@ -1,4 +1,5 @@
-import ReactDom from 'react-dom'
+import ReactDom from 'react-dom';
+import React, {Component} from 'react';
 
 import ComponentTypes from './components/ComponentTypes'
 import ComponentLifeCycle from './components/ComponentLifeCycle'
