@@ -36,14 +36,14 @@ class Base extends React.Component {
     shouldComponentUpdate(nextProps, nextState) {
         console.log("TRY:[5] shouldComponentUpdate");
         console.log(nextProps);
-        console.log(nS);
+        console.log(nextState);
         return true;
     }
 
     componentWillUpdate(nextProps, nextState) {
         console.log("TRY:[6] componentWillUpdate");
         console.log(nextProps);
-        console.log(nS);
+        console.log(nextState);
     }
 
     componentDidUpdate(nextProps,pS) {

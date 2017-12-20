@@ -5,14 +5,17 @@ class AnotherComponent extends Component {
         super(props);
         console.log("TRY:[x1] AnotherComponent:constructor");
         console.log(props);
-        this.modifiedProps = "MOD: Init";
         this.modifiedProps = "MOD: " + props.testing;
+        this.state = {
+            modifiedProps: "MOD: " + props.testing
+        }
     }
 
     componentWillReceiveProps(nextProps) {
         console.log("TRY:[x2] AnotherComponent:componentWillReceiveProps");
         console.log(nextProps);
         this.modifiedProps = "MOD: " + nextProps.testing;
+        this.setState({modifiedProps: "MOD: " + nextProps.testing});
     }
 
     shouldComponentUpdate(nextProps, nextState) {
@@ -33,7 +36,7 @@ class AnotherComponent extends Component {
         return (
             <div>
                 <h1>
-                    New props = {this.modifiedProps}
+                    New props = {this.state.modifiedProps}
                 </h1>
             </div>
         );

@@ -1,9 +1,9 @@
-import React from 'react'
 import ReactDom from 'react-dom'
 
 import ComponentTypes from './components/ComponentTypes'
 import ComponentLifeCycle from './components/ComponentLifeCycle'
 import ComponentProperties from './components/ComponentProperties'
 import ReactRouterSample from './components/ReactRouterSample'
+import RouteApp from './components/RouteApp'
 
-ReactDom.render(<ComponentLifeCycle/>, document.getElementById("root"));
+ReactDom.render(<RouteApp/>, document.getElementById("root"));

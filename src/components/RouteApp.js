@@ -1,13 +1,13 @@
 import React from 'react'
 import ReactDom from 'react-dom'
-import FunctionalComponent from './components/HelloMessage'
-import Header from './components/Header'
+import FunctionalComponent from './HelloMessage'
+import Header from './Header'
 import {Route, BrowserRouter as Router, Switch, Redirect} from 'react-router-dom'
-import About from './components/About'
-import People from './components/People'
-import Base from "./components/Base";
-import {Login, fakeAuth} from "./components/Login";
-import NotFound from "./components/NotFound";
+import About from './About'
+import People from './User'
+import Base from "./Base";
+import {Login, fakeAuth} from "./Login";
+import NotFound from "./NotFound";
 
 const Protected = () => {
     if (fakeAuth.isAuth)
@@ -40,4 +40,4 @@ const App = (props) => {
         </Router>
     );
 };
-ReactDom.render(<App sample_prp="Sample property"/>, document.getElementById("root"));
+export default App
